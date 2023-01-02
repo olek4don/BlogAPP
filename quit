@@ -1,0 +1,47 @@
+[33mcommit 717365ae92d2773c7bbc216fd1705f3cc7733995[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Axel Ef <olek4don@gmail.com>
+Date:   Mon Jan 2 20:07:12 2023 +0100
+
+    modify views and admin.py thast we can access to GUI on blog-webpage. Add proper date format for posts in home.html
+
+[33mcommit a8dac3ff16116be5d24582be0cc85bb912aa7623[m
+Author: Axel Ef <olek4don@gmail.com>
+Date:   Mon Jan 2 05:33:38 2023 +0100
+
+    add dunder str method to models.py and make some SQL and stuff with migrations in Django shell
+
+[33mcommit 87a45048e912de1097a088466d1a041b02ff370c[m
+Author: Axel Ef <olek4don@gmail.com>
+Date:   Mon Jan 2 01:47:37 2023 +0100
+
+    creating Post class in models.py for SQL handling. Make migrations
+
+[33mcommit a88eaf0ecf20e5c631c0e3773fc84313857ed200[m
+Author: Axel Ef <olek4don@gmail.com>
+Date:   Mon Jan 2 00:51:18 2023 +0100
+
+    creating superuser
+
+[33mcommit 1a47dfb2b06e7c63bf664b255709a1d7acbfc557[m
+Author: Axel Ef <olek4don@gmail.com>
+Date:   Sat Dec 31 05:05:02 2022 +0100
+
+    next part of base.html, add more flexible paths to  href for localize 'Home' and 'About'
+
+[33mcommit 2c76f11d8ab761650368ca1a4e58785b5a603537[m
+Author: Axel Ef <olek4don@gmail.com>
+Date:   Thu Dec 29 07:53:14 2022 +0100
+
+    add snippets to base.html, create main.css file, make all more come together
+
+[33mcommit d794511a99d547b8e3391965971b45074cdd0bb0[m
+Author: Axel Ef <olek4don@gmail.com>
+Date:   Thu Dec 29 06:30:12 2022 +0100
+
+    create base.html and make some basic inheritance in templates/
+
+[33mcommit 74499157a6d529f3a1c0ac177bd770326e7ac586[m
+Author: Axel Ef <olek4don@gmail.com>
+Date:   Thu Dec 22 03:45:21 2022 +0100
+
+    Start project - aplications and routes.
