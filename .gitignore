@@ -18,6 +18,7 @@ django_project/__pycache__/
 # Ignore static and media files
 static/
 /home/axel/MyCode/DjangoTutorial/django_project/media
+media/
 
 #additional
 ./.vscode
