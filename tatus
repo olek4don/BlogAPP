@@ -1,0 +1,184 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex e69de29..30ddd13 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m# Ignore compiled Python files[m
+[32m+[m[32m__pycache__/[m
+[32m+[m[32m*.pyc[m
+[32m+[m[32m*.pyo[m
+[32m+[m
+[32m+[m[32m# Ignore Python package metadata[m
+[32m+[m[32m*.egg-info/[m
+[32m+[m
+[32m+[m[32m# Ignore log files[m
+[32m+[m[32m*.log[m
+[32m+[m
+[32m+[m[32m# Ignore SQLite database files[m
+[32m+[m[32m*.sqlite3[m
+[32m+[m
+[32m+[m[32m# Ignore environment variable files[m
+[32m+[m[32m/django_project/.env[m
+[32m+[m
+[32m+[m[32m# Ignore static and media files[m
+[32m+[m[32mstatic/[m
+[32m+[m[32m/home/axel/MyCode/DjangoTutorial/django_project/media[m
+[32m+[m[32mmedia/[m
+[32m+[m[32mvenv/[m
+[1mdiff --git a/blog/__pycache__/__init__.cpython-310.pyc b/blog/__pycache__/__init__.cpython-310.pyc[m
+[1mindex ca2ae39..442eb61 100644[m
+Binary files a/blog/__pycache__/__init__.cpython-310.pyc and b/blog/__pycache__/__init__.cpython-310.pyc differ
+[1mdiff --git a/blog/__pycache__/admin.cpython-310.pyc b/blog/__pycache__/admin.cpython-310.pyc[m
+[1mindex fc04777..44875ab 100644[m
+Binary files a/blog/__pycache__/admin.cpython-310.pyc and b/blog/__pycache__/admin.cpython-310.pyc differ
+[1mdiff --git a/blog/__pycache__/apps.cpython-310.pyc b/blog/__pycache__/apps.cpython-310.pyc[m
+[1mindex b74e5b9..e6c79fb 100644[m
+Binary files a/blog/__pycache__/apps.cpython-310.pyc and b/blog/__pycache__/apps.cpython-310.pyc differ
+[1mdiff --git a/blog/__pycache__/models.cpython-310.pyc b/blog/__pycache__/models.cpython-310.pyc[m
+[1mindex c4ea9d3..97bcfda 100644[m
+Binary files a/blog/__pycache__/models.cpython-310.pyc and b/blog/__pycache__/models.cpython-310.pyc differ
+[1mdiff --git a/blog/__pycache__/urls.cpython-310.pyc b/blog/__pycache__/urls.cpython-310.pyc[m
+[1mindex c0d6aca..cf6bda3 100644[m
+Binary files a/blog/__pycache__/urls.cpython-310.pyc and b/blog/__pycache__/urls.cpython-310.pyc differ
+[1mdiff --git a/blog/__pycache__/views.cpython-310.pyc b/blog/__pycache__/views.cpython-310.pyc[m
+[1mindex 37fd20a..0c302e5 100644[m
+Binary files a/blog/__pycache__/views.cpython-310.pyc and b/blog/__pycache__/views.cpython-310.pyc differ
+[1mdiff --git a/blog/migrations/__pycache__/0001_initial.cpython-310.pyc b/blog/migrations/__pycache__/0001_initial.cpython-310.pyc[m
+[1mindex 6d421d7..a9e5c99 100644[m
+Binary files a/blog/migrations/__pycache__/0001_initial.cpython-310.pyc and b/blog/migrations/__pycache__/0001_initial.cpython-310.pyc differ
+[1mdiff --git a/blog/migrations/__pycache__/__init__.cpython-310.pyc b/blog/migrations/__pycache__/__init__.cpython-310.pyc[m
+[1mindex 090b283..974bc68 100644[m
+Binary files a/blog/migrations/__pycache__/__init__.cpython-310.pyc and b/blog/migrations/__pycache__/__init__.cpython-310.pyc differ
+[1mdiff --git a/db.sqlite3 b/db.sqlite3[m
+[1mindex 46d97b7..6362bf3 100644[m
+Binary files a/db.sqlite3 and b/db.sqlite3 differ
+[1mdiff --git a/django_project/__pycache__/__init__.cpython-310.pyc b/django_project/__pycache__/__init__.cpython-310.pyc[m
+[1mindex 8cc300f..dfff022 100644[m
+Binary files a/django_project/__pycache__/__init__.cpython-310.pyc and b/django_project/__pycache__/__init__.cpython-310.pyc differ
+[1mdiff --git a/django_project/__pycache__/settings.cpython-310.pyc b/django_project/__pycache__/settings.cpython-310.pyc[m
+[1mindex 90e7e31..5fbef91 100644[m
+Binary files a/django_project/__pycache__/settings.cpython-310.pyc and b/django_project/__pycache__/settings.cpython-310.pyc differ
+[1mdiff --git a/django_project/__pycache__/urls.cpython-310.pyc b/django_project/__pycache__/urls.cpython-310.pyc[m
+[1mindex ea1aaad..21846d5 100644[m
+Binary files a/django_project/__pycache__/urls.cpython-310.pyc and b/django_project/__pycache__/urls.cpython-310.pyc differ
+[1mdiff --git a/django_project/__pycache__/wsgi.cpython-310.pyc b/django_project/__pycache__/wsgi.cpython-310.pyc[m
+[1mindex 63563b3..1b0322b 100644[m
+Binary files a/django_project/__pycache__/wsgi.cpython-310.pyc and b/django_project/__pycache__/wsgi.cpython-310.pyc differ
+[1mdiff --git a/django_project/settings.py b/django_project/settings.py[m
+[1mindex be33960..a80da37 100644[m
+[1m--- a/django_project/settings.py[m
+[1m+++ b/django_project/settings.py[m
+[36m@@ -11,8 +11,12 @@[m [mhttps://docs.djangoproject.com/en/4.1/ref/settings/[m
+ """[m
+ [m
+ import os[m
+[32m+[m[32mimport json[m
+ from pathlib import Path[m
+ [m
+[32m+[m[32mwith open('/etc/config.json') as config_file:[m
+[32m+[m[32m    config = json.load(config_file)[m
+[32m+[m
+ # Build paths inside the project like this: BASE_DIR / 'subdir'.[m
+ BASE_DIR = Path(__file__).resolve().parent.parent[m
+ [m
+[36m@@ -21,13 +25,16 @@[m [mBASE_DIR = Path(__file__).resolve().parent.parent[m
+ # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/[m
+ [m
+ # SECURITY WARNING: keep the secret key used in production secret![m
+[31m-SECRET_KEY = 'django-insecure-o_*o*ss#+@56ma@!vg-96ct6t%$losnra$xw$nw2xc3w*(qch^'[m
+[32m+[m[32mSECRET_KEY = config['SECRET_KEY'][m
+ [m
+ # SECURITY WARNING: don't run with debug turned on in production![m
+ DEBUG = True[m
+ [m
+[31m-ALLOWED_HOSTS = [][m
+[31m-[m
+[32m+[m[32m# ALLOWED_HOSTS = ['127.0.0.1', 'twojadomena.pl'][m
+[32m+[m[32m# ALLOWED_HOSTS = ['maluch.mikr.us', 'maluch.mikr.us:30595'][m
+[32m+[m[32m# CSRF_TRUSTED_ORIGINS = ['*'][m
+[32m+[m[32m# ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'maluch.mikr.us', 'django-server',][m
+[32m+[m[32mALLOWED_HOSTS = ['*'][m
+ [m
+ # Application definition[m
+ [m
+[36m@@ -119,7 +126,8 @@[m [mUSE_TZ = True[m
+ # Static files (CSS, JavaScript, Images)[m
+ # https://docs.djangoproject.com/en/4.1/howto/static-files/[m
+ [m
+[31m-STATIC_URL = 'static/'[m
+[32m+[m[32mSTATIC_ROOT = os.path.join(BASE_DIR, 'static')[m
+[32m+[m[32mSTATIC_URL = '/static/'[m
+ [m
+ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')    # location on the file system[m
+ MEDIA_URL = '/media/'                           #[m
+[36m@@ -138,5 +146,5 @@[m [mEMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'[m
+ EMAIL_HOST = 'smtp.gmail.com'[m
+ EMAIL_PORT = 587[m
+ EMAIL_USE_TLS = True[m
+[31m-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')[m
+[31m-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')[m
+[32m+[m[32mEMAIL_HOST_USER = config.get('EMAIL_USER')[m
+[32m+[m[32mEMAIL_HOST_PASSWORD = config.get('EMAIL_PASS')[m
+[1mdiff --git a/django_project/wsgi.py b/django_project/wsgi.py[m
+[1mindex f9b9e8a..644945a 100644[m
+[1m--- a/django_project/wsgi.py[m
+[1m+++ b/django_project/wsgi.py[m
+[36m@@ -11,6 +11,18 @@[m [mimport os[m
+ [m
+ from django.core.wsgi import get_wsgi_application[m
+ [m
+[31m-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_project.settings')[m
+[32m+[m[32m# sys.path.append('/home/axel/django_project/django_project')[m
+[32m+[m
+[32m+[m[32m# sys.path.append('/home/axel/django_project/venv/lib/python3.10/site-packages')[m
+[32m+[m
+[32m+[m
+[32m+[m[32m# activate_this = '/home/axel/django_project/venv/bin/activate'[m
+[32m+[m[32m# with open(activate_this) as file_:[m
+[32m+[m[32m#     exec(file_.read(), dict(__file__=activate_this))[m
+[32m+[m
+[32m+[m
+[32m+[m[32mos.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_project.settings")[m
+[32m+[m[32m# os.environ['DJANGO_SETTINGS_MODULE'] = 'django_project.settings'[m
+[32m+[m
+ [m
+ application = get_wsgi_application()[m
+[1mdiff --git a/manage.py b/manage.py[m
+[1mold mode 100755[m
+[1mnew mode 100644[m
+[1mdiff --git a/media/default.jpg b/media/default.jpg[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/media/profile_pics/1.jpg b/media/profile_pics/1.jpg[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/media/profile_pics/ja.JPEG b/media/profile_pics/ja.JPEG[m
+[1mold mode 100644[m
+[1mnew mode 100755[m
+[1mdiff --git a/users/__pycache__/__init__.cpython-310.pyc b/users/__pycache__/__init__.cpython-310.pyc[m
+[1mindex 3b99350..c305a8f 100644[m
+Binary files a/users/__pycache__/__init__.cpython-310.pyc and b/users/__pycache__/__init__.cpython-310.pyc differ
+[1mdiff --git a/users/__pycache__/admin.cpython-310.pyc b/users/__pycache__/admin.cpython-310.pyc[m
+[1mindex 951946d..fab498a 100644[m
+Binary files a/users/__pycache__/admin.cpython-310.pyc and b/users/__pycache__/admin.cpython-310.pyc differ
+[1mdiff --git a/users/__pycache__/apps.cpython-310.pyc b/users/__pycache__/apps.cpython-310.pyc[m
+[1mindex 99d7142..66b8ec9 100644[m
+Binary files a/users/__pycache__/apps.cpython-310.pyc and b/users/__pycache__/apps.cpython-310.pyc differ
+[1mdiff --git a/users/__pycache__/forms.cpython-310.pyc b/users/__pycache__/forms.cpython-310.pyc[m
+[1mindex eece83b..ad15dd9 100644[m
+Binary files a/users/__pycache__/forms.cpython-310.pyc and b/users/__pycache__/forms.cpython-310.pyc differ
+[1mdiff --git a/users/__pycache__/models.cpython-310.pyc b/users/__pycache__/models.cpython-310.pyc[m
+[1mindex 3f765d0..cb7786d 100644[m
+Binary files a/users/__pycache__/models.cpython-310.pyc and b/users/__pycache__/models.cpython-310.pyc differ
+[1mdiff --git a/users/__pycache__/signals.cpython-310.pyc b/users/__pycache__/signals.cpython-310.pyc[m
+[1mindex 68b4344..2dc13ec 100644[m
+Binary files a/users/__pycache__/signals.cpython-310.pyc and b/users/__pycache__/signals.cpython-310.pyc differ
+[1mdiff --git a/users/__pycache__/views.cpython-310.pyc b/users/__pycache__/views.cpython-310.pyc[m
+[1mindex 8f11f24..fc44d8e 100644[m
+Binary files a/users/__pycache__/views.cpython-310.pyc and b/users/__pycache__/views.cpython-310.pyc differ
+[1mdiff --git a/users/migrations/__pycache__/0001_initial.cpython-310.pyc b/users/migrations/__pycache__/0001_initial.cpython-310.pyc[m
+[1mindex a77b7cb..7fdd75a 100644[m
+Binary files a/users/migrations/__pycache__/0001_initial.cpython-310.pyc and b/users/migrations/__pycache__/0001_initial.cpython-310.pyc differ
+[1mdiff --git a/users/migrations/__pycache__/__init__.cpython-310.pyc b/users/migrations/__pycache__/__init__.cpython-310.pyc[m
+[1mindex e6fe839..302b082 100644[m
+Binary files a/users/migrations/__pycache__/__init__.cpython-310.pyc and b/users/migrations/__pycache__/__init__.cpython-310.pyc differ
