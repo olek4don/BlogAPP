@@ -1,5 +1,5 @@
 # Ignore compiled Python files
-./__pycache__/
+./djangoproject/__pycache__/
 *.pyc
 *.pyo
 
