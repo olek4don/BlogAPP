@@ -25,5 +25,5 @@ static/
 media/
 
 #additional
-./.vscode
+./.vscode/
 venv/
