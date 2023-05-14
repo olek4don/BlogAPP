@@ -1,0 +1,20 @@
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Python package metadata
+*.egg-info/
+
+# Ignore log files
+*.log
+
+# Ignore SQLite database files
+*.sqlite3
+
+# Ignore environment variable files
+/django_project/.env
+
+# Ignore static and media files
+static/
+/home/axel/MyCode/DjangoTutorial/django_project/media
