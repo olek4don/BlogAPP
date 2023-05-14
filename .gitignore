@@ -1,5 +1,5 @@
 # Ignore compiled Python files
-./django_project/__pycache__/
+django_project/__pycache__/
 *.pyc
 *.pyo
 
@@ -10,7 +10,7 @@
 *.log
 
 # Ignore SQLite database files
-db.sqlite3
+*.sqlite3
 
 # Ignore environment variable files
 /django_project/.env
